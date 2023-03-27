@@ -1,0 +1,318 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 62.5%;
+  background: #494d5f;
+  color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  /* border: 2px solid red; */
+  max-width: 700px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #fcfcfc;
+  color: #494d5f;
+  /* color: green; */
+  padding: 2.5em;
+  border-radius: 10px;
+}
+
+.container>h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main .add-item>h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+}
+
+.main .add-item{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.flex-4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-4 .left,.flex-4 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.set{
+    display: flex;
+    gap: 1rem;
+    /* border: 2px solid red; */
+    justify-content: flex-end;
+    align-items: center;
+}
+.set h2{
+    font-size: 1.5rem;
+}
+select{
+    color: white;
+}
+input,select{
+    /* border: 2px solid red; */
+    padding: 0.4em;
+    width: 180px;
+    outline: none;
+    /* border: 3px solid grey; */
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    background: #494d5f;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.expense{
+    /* border: 2px solid red; */
+    padding: 0.8em 1em;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid grey ;
+    cursor: pointer;
+    font-weight: 500;
+    background: #494d5f;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.hanji{
+    /* border: 2px solid red; */
+    cursor: pointer;
+}
+
+
+.details{
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+}
+
+.details table{
+    width: 100%;
+    /* margin-top: 1rem; */
+}
+
+tr{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+tr td{
+    /* border: 2px solid red; */
+    flex-basis: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #494d5f;
+    color: #fcfcfc;
+    padding: 0.2em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.small-button{
+    padding: 0.4em 1em;
+    font-size: 1rem;
+    background: transparent;
+    border: 3px solid grey ;
+    cursor: pointer;
+}
+
+select option{
+    background: #494d5f;
+}
+
+.date{
+color: #fcfcfc;
+cursor: pointer;
+}
+
+.name,.amount{
+    color: #fcfcfc;
+}
+
+.container{
+    margin: 1rem 1rem;
+}
+
+.toggle-1{
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+    .container>h2{
+        font-size: 1.5rem;
+        
+    }
+    .set h2{
+        font-size: 1.2rem;
+    }
+    .details{
+        /* border: 2px solid red; */
+        font-size: 1.2rem;
+    }
+    input,select{
+        /* border: 2px solid red; */
+        padding: 0.2em;
+    }
+    .main .add-item>h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:678px){
+    input,select{
+        width: 150px;
+    }
+    .container>h2{
+        font-size: 1.2rem;
+        
+    }
+    .set h2{
+        font-size: 1.2rem;
+    }
+    .details{
+        /* border: 2px solid red; */
+        font-size: 1.1rem;
+    }
+    input,select{
+        /* border: 2px solid red; */
+        padding: 0.1em;
+    }
+    .main .add-item>h2{
+        font-size: 1.2rem;
+    }
+    .set{
+        gap: 0.2rem;
+    }
+}
+
+@media screen and (max-width:568px){
+    .container{
+        /* border: 2px solid red; */
+        padding: 1.5em;
+    }
+    .container>h2{
+        font-size: 1.5rem;
+        
+    }
+    input,select{
+        width: 180px;
+    }
+    .set h2{
+        font-size: 1rem;
+    }
+    .details{
+        /* border: 2px solid red; */
+        font-size: 1rem;
+    }
+    input,select{
+        /* border: 2px solid red; */
+        padding: 0.2em;
+    }
+    .main .add-item>h2{
+        font-size: 1.5rem;
+    }
+    .main .add-item .set{
+        flex-basis: 100%;
+    }
+    .flex-4{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .set{
+        gap: 1rem;
+        /* border: 2px solid red; */
+        width: 280px;
+        padding: 1em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    tr td{
+        font-size: 1rem;
+        padding: 0.2em;
+        flex-basis: 19%;
+    }
+    .container{
+        margin: 0;
+        border-radius: 0px;
+        width: 100vw;
+    }
+
+    body{
+        display: block;
+        background: 
+        white;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .container{
+        padding: 0.6em;
+    }
+    .details{
+        background: #494d5f;
+        color: white;
+    }
+    thead tr{
+        margin-top: 0.5rem;
+    }
+    thead tr td{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .toggle{
+        display: none;
+    }
+    .toggle-1{
+        display: flex;
+    }
+    
+}

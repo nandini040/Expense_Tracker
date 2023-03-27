@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expense Tracker App</h2>
+      <div class="main">
+        <div class="add-item">
+          <h2>Add a new Item:</h2>
+
+          <div class="flex-4">
+            <div class="left">
+              <div class="set">
+                <h2>Type:</h2>
+                <select onchange="selectValue();">
+                  <option value="choose" class="choose-one">Choose One</option>
+                  <option value="Card">Card</option>
+                  <option value="Cash">Cash</option>
+                  <option value="Crypto">CryptoCoin</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="set">
+                <h2>Date:</h2>
+                <input type="date" class="date" />
+              </div>
+            </div>
+            <div class="right">
+              <div class="set">
+                <h2>Name:</h2>
+                <input type="text" class="name" />
+              </div>
+              <div class="set">
+                <h2>Amount:</h2>
+                <input type="number" class="amount" min="1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="button">
+            <button class="expense">Add a new Expense</button>
+          </div>
+        </div>
+        <div class="details">
+          <table>
+            <thead>
+              <tr>
+                <td>Type</td>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td class="toggle">Options</td>
+                <td class="toggle-1">Opt</td>
+              </tr>
+            </thead>
+            <tbody class="table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
+
